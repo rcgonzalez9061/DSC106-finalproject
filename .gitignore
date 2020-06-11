@@ -1,6 +1,6 @@
 examples/
 data/discard/
-*.tff
+*.ttf
 *.zip
 *.ipynb
 *.db
