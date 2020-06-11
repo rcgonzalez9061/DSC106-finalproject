@@ -1,0 +1,254 @@
+* {
+    font-family: 'Roboto';
+    font-weight: normal;
+    color: #231F20;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: 'counter-strikeregular';
+}
+
+p {
+    font-family: "Roboto";
+    font-size: 24px;
+}
+
+body {
+    align-items: center;
+}
+
+#viewership, #history, #map, #playerApproval-container {
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#cs-logo-big {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    text-align: center;
+    width: 70%;
+    height: 50%;
+    max-width: 625px;
+}
+
+#intro{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+#intro h1{
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 0px;
+    color: #231F20;
+    font-family: 'counter-strikeregular';
+}
+
+/* #intro h3{
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: #231F20;
+    margin-top: 20px;
+} */
+
+/* #playerApproval-container {
+    margin: auto;
+} */
+
+#history, #playerApproval-container {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    width: 90%;
+}
+
+#history p {
+    margin-bottom: 0px;
+}
+
+#history figure {
+    width: 100%;
+    max-width: 1600px;
+}
+
+#history-text {
+    margin-bottom: 0px;
+}
+
+#history-chart {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+#playerApproval-container p {
+    margin-bottom: 0px;
+}
+
+#playerApproval-container figure {
+    width: 100%;
+    max-width: 1600px;
+}
+
+#playerApproval-text {
+    margin-bottom: 0px;
+}
+
+#playerApproval-chart {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+/* #history-text{
+    margin: auto;
+} */
+
+/* #history-chart{
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+} */
+
+#viewership{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+#viewership h3{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#viewership p {
+    width: 60%;
+    min-width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#charts-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    max-height: 400px;
+    vertical-align: top;
+    text-align: center;
+}
+
+#viewership-may, #viewership-may {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#map {
+    display: flex;
+    flex-direction: column;
+}
+
+#map figure {
+    height: 500px;
+    width: 100%;
+    max-width: 900px;
+}
+
+#map div {
+    width: 100%;
+}
+
+#map p {
+    width: 60%;
+    min-width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#map p#setyear {
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    max-width: 800px;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    margin: 15px;
+    position: relative;
+    /* opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s; */
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 25px;
+    background: #0c0f12;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 5px;
+    height: 25px;
+    background: #0c0f12;
+    cursor: pointer;
+}
+
+.startyear,
+.endyear {
+	float: left;
+	/* width: 10vw; */
+	color: #333;
+	text-align: right;
+	font-weight: bold;
+}
+.endyear {
+	text-align: left;
+}
+
+/* .slider {
+	position: relative;
+	float: left;
+	width: 80vw;
+	padding: 0 0.9375rem;
+} */
+
+/* input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #A7A7A7;
+    border-radius: 25px;
+    background: #FFE014;
+} */
