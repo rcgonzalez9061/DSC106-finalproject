@@ -4,3 +4,4 @@ data/discard/
 *.zip
 *.ipynb
 *.db
+*.pdn
