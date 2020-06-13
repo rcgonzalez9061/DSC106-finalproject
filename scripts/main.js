@@ -33,11 +33,6 @@ var viewershipData = [{
     "y": 9.6,
     img_path: "images/LoL.png", 
     color: "#1C828D"
-}, {
-    "name": "Others",
-    "y": 6,
-    img_path: "", 
-    color: "#727272"
 }]
 
 var viewershipData2019 = [{
@@ -226,7 +221,8 @@ function plotMap() {
             style: {
                 fontFamily: 'Roboto',
                 fontSize: "24px",
-                color: '#d0d0d0'
+                color: 'white',
+                textOutline: '1px contrast'
             }
 		},
 		// tooltip: {
@@ -259,6 +255,7 @@ function plotMap() {
             name: 'Region',
             data: data,
             maxSize: '50%',
+            // color: '#ffb94f'
             // color: H.getOptions().colors[0]
           }],
 		credits: {
@@ -343,7 +340,7 @@ function plotLineChart() {
 
         approval = {
             x: newDate,
-            y: playerApprovalData[date]["scaledRate"],
+            y: playerApprovalData[date]["approvalRate"] * 1500000,
             value: playerApprovalData[date]["approvalRate"]
         }
 
@@ -379,17 +376,11 @@ function plotLineChart() {
 			},
 			type: 'datetime',
 			labels: {
-                format: '{value:%m/%d/%y}',
+                format: '{value:%b \'%y}',
                 style: {
                     color: '#d0d0d0'
                 }
 			},
-			// crosshair: {
-			// 	labels: {
-			// 		enabled: true,
-			// 		format: '{value:%m/%d/%y}'
-			// 	}
-			// }
 		},
 		yAxis: {
 			title: {
@@ -409,7 +400,8 @@ function plotLineChart() {
 			// 		// format: '{value}'
 			// 	}
             // },
-            min: 0
+            min: 0,
+            max: 1500000
 		},
 		legend: {
 			enabled: false
@@ -514,7 +506,7 @@ function setDateLabel() {
         mm='0'+mm;
     } 
     today = mm+'/'+dd+'/'+yyyy;
-    label.innerText = "Usage on: " + today
+    label.innerText = "Pick a date below. Currently displaying data for: " + today
 }
 
 function init() {
